@@ -9,21 +9,14 @@ public class Application {
     
    
    
-    private Map<String, ExchangeOperator> commands;
+    private Map<String, ExchangeOperator> ExchangeOperator;
 
     public static void main(String[] args) {
-        //new Application().execute();
+        new Application().execute();
     }
 
-   
-   
-
-    /*private void loadCurrencySet() {
-        CurrencySetLoader loader = new CurrencySetLoader {};
-        loader.load();
-    }
-
+  
     private void execute() {
         
-    };*/
+    };
 }
