@@ -7,9 +7,9 @@ public class ExchangeRate {
     private final Date date;
     private final Currency from;
     private final Currency to;
-    private final Number rate;
+    private final double rate;
 
-    public ExchangeRate(Date date, Currency from, Currency to, Number rate) {
+    public ExchangeRate(Date date, Currency from, Currency to, double rate) {
         this.date = date;
         this.from = from;
         this.to = to;

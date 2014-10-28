@@ -12,18 +12,18 @@ public class Application {
     private Map<String, ExchangeOperator> commands;
 
     public static void main(String[] args) {
-        new Application().execute();
+        //new Application().execute();
     }
 
    
    
 
-    private void loadCurrencySet() {
+    /*private void loadCurrencySet() {
         CurrencySetLoader loader = new CurrencySetLoader {};
         loader.load();
     }
 
     private void execute() {
         
-    };
+    };*/
 }
