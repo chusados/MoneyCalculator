@@ -1,16 +1,15 @@
 package app;
 
 import java.util.Map;
-import control.Command;
+import control.ExchangeOperator;
 import persistance.CurrencySetLoader;
-import persistance.MockCurrencySetLoader;
 
 
 public class Application {
     
    
    
-    private Map<String, Command> commands;
+    private Map<String, ExchangeOperator> commands;
 
     public static void main(String[] args) {
         new Application().execute();
@@ -20,7 +19,7 @@ public class Application {
    
 
     private void loadCurrencySet() {
-        CurrencySetLoader loader = new MockCurrencySetLoader();
+        CurrencySetLoader loader = new CurrencySetLoader {};
         loader.load();
     }
 

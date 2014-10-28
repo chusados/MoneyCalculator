@@ -1,6 +1,6 @@
 package control;
 
-public interface Command {
+public interface ExchangeOperator {
 
     public void execute();
 }
