@@ -1,7 +1,7 @@
-
 package ui;
 
+import model.Exchange;
 
-public class ExchangeDialog {
-    
+public interface ExchangeDialog {
+    public Exchange getExchange();
 }

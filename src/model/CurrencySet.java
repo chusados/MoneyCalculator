@@ -1,24 +1,26 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.List;
 
-public class CurrencySet extends HashSet<Currency> {
+public class CurrencySet {
 
-    private static CurrencySet instance;
+    private final List<Currency> list = new ArrayList<Currency>();
 
-    private CurrencySet() {
-        super();
+    public boolean add(Currency currency) {
+        return list.add(currency);
     }
 
-    public static CurrencySet getInstance() {
-        if (instance == null) {
-            instance = new CurrencySet();
-        }
-        return instance;
+    public Currency get(int index) {
+        return list.get(index);
     }
 
-    public Currency[] search(String token) {
+    public Currency[] toArray() {
+        return list.toArray(new Currency[list.size()]);
+    }
+}
+
+   /* public Currency[] search(String token) {
         ArrayList<Currency> list = new ArrayList<>();
         for (Currency currency : this) {
             if (currency.getCode().equalsIgnoreCase(token)) {
@@ -30,5 +32,5 @@ public class CurrencySet extends HashSet<Currency> {
             }
         }
         return list.toArray(new Currency[0]);
-    }
-}
+    }*/
+
